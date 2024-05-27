@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evenements",
+  "info": {
+    "singularName": "evenement",
+    "pluralName": "evenements",
+    "displayName": "Evenement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3,
+      "maxLength": 70
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
