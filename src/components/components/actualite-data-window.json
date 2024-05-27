@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_actualite_data_windows",
+  "info": {
+    "displayName": "ActualiteDataWindow"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "actualites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::actualite.actualite"
+    }
+  }
+}

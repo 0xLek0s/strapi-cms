@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_evenement_data_windows",
+  "info": {
+    "displayName": "EvenementDataWindow"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "evenements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::evenement.evenement"
+    }
+  }
+}

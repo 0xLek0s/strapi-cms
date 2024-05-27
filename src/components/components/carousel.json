@@ -1,15 +1,9 @@
 {
-  "kind": "singleType",
-  "collectionName": "carousels",
+  "collectionName": "components_components_carousels",
   "info": {
-    "singularName": "carousel",
-    "pluralName": "carousels",
     "displayName": "Carousel"
   },
-  "options": {
-    "draftAndPublish": true
-  },
-  "pluginOptions": {},
+  "options": {},
   "attributes": {
     "images": {
       "allowedTypes": [

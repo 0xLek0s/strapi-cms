@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_appel_offre_data_windows",
+  "info": {
+    "displayName": "AppelOffreDataWindow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "appelOffres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::appel-offre.appel-offre"
+    }
+  }
+}

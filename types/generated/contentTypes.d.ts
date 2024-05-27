@@ -883,36 +883,6 @@ export interface ApiAppelOffreAppelOffre extends Schema.CollectionType {
   };
 }
 
-export interface ApiCarouselCarousel extends Schema.SingleType {
-  collectionName: 'carousels';
-  info: {
-    singularName: 'carousel';
-    pluralName: 'carousels';
-    displayName: 'Carousel';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    images: Attribute.Media;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::carousel.carousel',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::carousel.carousel',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiEntrepriseEntreprise extends Schema.CollectionType {
   collectionName: 'entreprises';
   info: {
@@ -1302,7 +1272,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    blocks: Attribute.DynamicZone<['layout.hero-section']>;
+    blocks: Attribute.DynamicZone<['layout.hero-section', 'layout.body']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1355,7 +1325,8 @@ export interface ApiRecrutementRecrutement extends Schema.CollectionType {
           max: 1000000;
         },
         number
-      >;
+      > &
+      Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1394,7 +1365,6 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::actualite.actualite': ApiActualiteActualite;
       'api::appel-offre.appel-offre': ApiAppelOffreAppelOffre;
-      'api::carousel.carousel': ApiCarouselCarousel;
       'api::entreprise.entreprise': ApiEntrepriseEntreprise;
       'api::evenement.evenement': ApiEvenementEvenement;
       'api::global.global': ApiGlobalGlobal;

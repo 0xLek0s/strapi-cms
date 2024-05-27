@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_layout_bodies",
+  "info": {
+    "displayName": "Body Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "actualites": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.actualite-data-window"
+    },
+    "evenements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.evenement-data-window"
+    },
+    "recrutements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.recrutement-data-window"
+    },
+    "appelOffres": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.appel-offre-data-window"
+    },
+    "carousel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.carousel"
+    },
+    "espaceEtudiant": {
+      "displayName": "EspaceEtudiant",
+      "type": "component",
+      "repeatable": false,
+      "component": "components.espace-etudiant"
+    }
+  }
+}

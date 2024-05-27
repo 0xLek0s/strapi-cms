@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_recrutement_data_windows",
+  "info": {
+    "displayName": "RecrutementDataWindow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "recrutements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recrutement.recrutement"
+    }
+  }
+}
