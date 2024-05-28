@@ -104,7 +104,9 @@ export interface ComponentsSocials extends Schema.Component {
   };
   attributes: {
     url: Attribute.String;
-    image: Attribute.Media;
+    icon: Attribute.Enumeration<
+      ['FACEBOOK_ICON', 'INSTAGRAM_ICON', 'LINKEDIN_ICON', 'YOUTUBE_ICON']
+    >;
   };
 }
 

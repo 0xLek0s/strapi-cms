@@ -9,12 +9,13 @@
     "url": {
       "type": "string"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "FACEBOOK_ICON",
+        "INSTAGRAM_ICON",
+        "LINKEDIN_ICON",
+        "YOUTUBE_ICON"
       ]
     }
   }
