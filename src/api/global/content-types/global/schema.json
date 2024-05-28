@@ -28,6 +28,11 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.footer"
+    },
+    "Body": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.body"
     }
   }
 }

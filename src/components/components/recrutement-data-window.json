@@ -9,7 +9,7 @@
     "title": {
       "type": "string"
     },
-    "recrutements": {
+    "links": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::recrutement.recrutement"

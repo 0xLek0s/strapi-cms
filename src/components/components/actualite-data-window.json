@@ -1,14 +1,15 @@
 {
   "collectionName": "components_components_actualite_data_windows",
   "info": {
-    "displayName": "ActualiteDataWindow"
+    "displayName": "ActualiteDataWindow",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "actualites": {
+    "links": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::actualite.actualite"

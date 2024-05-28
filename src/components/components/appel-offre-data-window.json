@@ -9,7 +9,7 @@
     "title": {
       "type": "string"
     },
-    "appelOffres": {
+    "links": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::appel-offre.appel-offre"
