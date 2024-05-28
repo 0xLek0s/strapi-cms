@@ -4,11 +4,10 @@ export interface ComponentsActualiteDataWindow extends Schema.Component {
   collectionName: 'components_components_actualite_data_windows';
   info: {
     displayName: 'ActualiteDataWindow';
-    description: '';
   };
   attributes: {
     title: Attribute.String;
-    links: Attribute.Relation<
+    actualites: Attribute.Relation<
       'components.actualite-data-window',
       'oneToMany',
       'api::actualite.actualite'
@@ -24,7 +23,7 @@ export interface ComponentsAppelOffreDataWindow extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    links: Attribute.Relation<
+    appelOffres: Attribute.Relation<
       'components.appel-offre-data-window',
       'oneToMany',
       'api::appel-offre.appel-offre'
@@ -57,11 +56,10 @@ export interface ComponentsEvenementDataWindow extends Schema.Component {
   collectionName: 'components_components_evenement_data_windows';
   info: {
     displayName: 'EvenementDataWindow';
-    description: '';
   };
   attributes: {
     title: Attribute.String;
-    links: Attribute.Relation<
+    evenements: Attribute.Relation<
       'components.evenement-data-window',
       'oneToMany',
       'api::evenement.evenement'
@@ -90,7 +88,7 @@ export interface ComponentsRecrutementDataWindow extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    links: Attribute.Relation<
+    recrutements: Attribute.Relation<
       'components.recrutement-data-window',
       'oneToMany',
       'api::recrutement.recrutement'
